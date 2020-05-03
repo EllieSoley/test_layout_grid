@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+        box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .header {
+            grid-area: header;
+            background-color:  #66ccff;
+            padding: 64px;
+            text-align: center;
+            color: white;
+            font-family: MV Boli;
+            font-size: 32px;
+            color: white;
+        }
+        .nav {
+            grid-area: nav;
+            background-color: whitesmoke;
+            padding: 14px 20px;
+        }
+        .nav a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            padding: 14px 20px;
+            white-space: nowrap;    
+        }
+        .nav a:hover {
+            background-color: aquamarine;
+        }
+        
+        .left-sidebar {
+            grid-area: left-sidebar;
+            background-color: whitesmoke;
+            opacity: 0.5;
+        }
+        .main {
+            grid-area: main;
+            background-color: white;
+            font-size: 30px;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: whitesmoke;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-areas: "header header"
+                                 "nav nav"
+                                 "left-sidebar main"
+                                 "footer footer";
+            grid-gap: 10px;
+        }
+         .padding-32 {
+            padding-top: 32px;
+        }
+        .font-16 {
+            font-size: 16px;
+        }
+        .font-12 {
+            font-size: 12px;
+        }
+        .center {
+            text-align: center;
+        }
+         .img {
+            width: 100%;
+            padding: 20px;
+            background-color: aquamarine;
+        }
+        @media screen and (max-width: 700px) {
+            .grid {
+                display: block;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+        <div class="header">
+            <h1>We need vitamin sea</h1>
+            <p>And a breath of fresh air</p>
+        </div>
+        <div class="nav">
+            
+            <a href="#">The Caribbean Sea</a>
+            <a href="#">The Baltic Sea</a>
+            <a href="#">The Northern Sea</a>
+            <a href="#">The Faraway Sea</a>
+        </div>
+        
+            <div class="left-sidebar">
+                <p class="font-12">Lorem ipsum dolor</p>
+                <div class="img"></div>
+                  <audio controls>
+                        <source src="audio/Звуки моря под гитару.mp3">
+                    </audio>
+            </div>
+           <div class="main">
+                <p class="padding-32 font-16 center">Une âme de feu, les yeux racontent les océans...</p>
+                <p class="font-16 center">Sunt in culpa qui officia deserunt mollit anim
+                id est laborum consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                
+                
+                <img src="photos/vsem_kapelku_morya.gif" alt="la_mer">
+                <div id="mer">
+                <img id="sea" src="photos/IMG20200222190821.jpg" alt="sea" class="img">
+
+                    </div>
+            </div>   
+        <div class="footer"></div>
+        </div>
+    </body>
+</html>
